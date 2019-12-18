@@ -13,3 +13,9 @@ SELECT "warehouse", "products"."description" FROM "warehouse_product"
 JOIN "products" on "products"."id" = "warehouse_product"."product_id"
 JOIN "warehouse" on "warehouse"."id" = "warehouse_product"."warehouse_id"
 WHERE "product_id" = 5;
+
+-- 4. Which warehouses have diet pepsi
+SELECT "warehouse", "products"."description" FROM "warehouse_product"
+JOIN "products" on "products"."id" = "warehouse_product"."product_id"
+JOIN "warehouse" on "warehouse"."id" = "warehouse_product"."warehouse_id"
+WHERE "product_id" = 6;
