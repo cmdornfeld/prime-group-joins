@@ -22,3 +22,6 @@ WHERE "product_id" = 6;
 
 -- 6. How many customers do we have
 SELECT COUNT("id") FROM "customers";
+
+-- How many products do we carry
+SELECT COUNT("id") FROM "products";
