@@ -23,5 +23,9 @@ WHERE "product_id" = 6;
 -- 6. How many customers do we have
 SELECT COUNT("id") FROM "customers";
 
--- How many products do we carry
+-- 7. How many products do we carry
 SELECT COUNT("id") FROM "products";
+
+-- 8. What is the total available on-hand quantity of diet pepsi
+SELECT SUM("warehouse_product"."on_hand") FROM "warehouse_product"
+WHERE "warehouse_product"."product_id" = 6;
