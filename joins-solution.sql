@@ -19,3 +19,6 @@ SELECT "warehouse", "products"."description" FROM "warehouse_product"
 JOIN "products" on "products"."id" = "warehouse_product"."product_id"
 JOIN "warehouse" on "warehouse"."id" = "warehouse_product"."warehouse_id"
 WHERE "product_id" = 6;
+
+-- 6. How many customers do we have
+SELECT COUNT("id") FROM "customers";
